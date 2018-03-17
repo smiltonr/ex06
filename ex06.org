@@ -1,0 +1,41 @@
+#+TITLE: Exercise 6: Arrays and 2D Arrays
+#+AUTHOR: S Milton Rajendram
+
+#+LaTeX_HEADER: \usepackage{palatino}
+#+LaTeX_HEADER: \usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+#+LaTeX_HEADER: \usepackage{setspace}
+#+OPTIONS: toc:nil
+
+#+BEGIN_EXPORT latex
+\linespread{1.2}
+#+END_EXPORT
+#+PROPERTY: header-args :exports none
+* Exercises
+  #+LATEX: \linespread{1}
+1. Define Boolean functions
+   - =is_prime(n)= that tests whether a non-negative integer
+     =n= is prime or not.
+   - =is_cube(n)= that tests whether number =n= is a perfect
+     cube.
+   - =is_divisible_by (n, d)= that tests whether an integer =n=
+     is divisible by integer =d=.
+2. Sort the list of numbers based on their weights, where
+   the weight of a number is defined as
+   \[
+   \text{weight}(n) = \begin{cases}
+   3 & n \text{ is prime.}\\
+   4 & n \text{ is a multiple of 4 and divisible by 6.}\\
+   5 & n \text{ is a pefect cube.}
+   \end{cases}
+   \]
+3. Populate an array =heights[N]= with heights of persons
+   and find how many persons are above the average height.
+5. Populate a two dimensional array =a[N][N]= with heights
+   and weights of persons and compute the Body Mass Index
+   (BMI) of the individuals. =a[i][0]= and =a[i][1]= are the
+   height and weight of =i= th person.  BMI is defined as
+   #
+   \[
+   \text{BMI} = \cfrac{\text{weight}}{\text{height}^2}
+   \]
+   where weight is in kg and height is in m.
